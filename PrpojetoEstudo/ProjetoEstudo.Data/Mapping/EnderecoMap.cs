@@ -16,6 +16,8 @@ namespace ProjetoEstudo.Data.Mapping
             builder.ToTable("tbEndereco");
 
             builder.HasKey(e => e.IdEndereco);
+
+            builder.Property(e => e.IdEndereco).IsRequired();
         }
     }
 }

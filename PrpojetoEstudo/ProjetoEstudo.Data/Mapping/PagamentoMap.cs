@@ -16,6 +16,8 @@ namespace ProjetoEstudo.Data.Mapping
             builder.ToTable("tbPagamento");
 
             builder.HasKey(pa => pa.IdPagamento);
+
+            builder.Property(pa => pa.IdPagamento).IsRequired();
         }
     }
 }

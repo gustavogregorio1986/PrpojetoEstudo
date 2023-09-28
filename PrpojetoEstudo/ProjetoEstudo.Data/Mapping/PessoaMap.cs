@@ -16,6 +16,8 @@ namespace ProjetoEstudo.Data.Mapping
             builder.ToTable("tbPessoa");
 
             builder.HasKey(p => p.IdPessoa);
+
+            builder.Property(p => p.IdPessoa).IsRequired();
         }
     }
 }

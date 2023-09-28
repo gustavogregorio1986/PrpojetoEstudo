@@ -16,6 +16,8 @@ namespace ProjetoEstudo.Data.Mapping
             builder.ToTable("tbProduto");
 
             builder.HasKey(pr => pr.IdProduto);
+
+            builder.Property(pr => pr.IdProduto).IsRequired();
         }
     }
 }
