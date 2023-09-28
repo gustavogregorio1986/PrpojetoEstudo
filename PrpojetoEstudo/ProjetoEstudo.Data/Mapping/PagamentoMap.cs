@@ -14,6 +14,8 @@ namespace ProjetoEstudo.Data.Mapping
         public void Configure(EntityTypeBuilder<Pagamento> builder)
         {
             builder.ToTable("tbPagamento");
+
+            builder.HasKey(pa => pa.IdPagamento);
         }
     }
 }

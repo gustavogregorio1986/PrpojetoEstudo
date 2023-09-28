@@ -17,5 +17,7 @@ namespace ProjetoEstudo.Entidade.Entidade
         public string Bairro { get; set; }
 
         public Pessoa Pessoa { get; set; }
+
+        public int Id_Pessoa { get; set; }
     }
 }

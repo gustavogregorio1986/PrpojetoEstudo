@@ -14,6 +14,8 @@ namespace ProjetoEstudo.Data.Mapping
         public void Configure(EntityTypeBuilder<Loja> builder)
         {
             builder.ToTable("tbLoja");
+
+            builder.HasKey(l => l.IdLoja);
         }
     }
 }

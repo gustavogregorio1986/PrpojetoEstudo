@@ -15,5 +15,7 @@ namespace ProjetoEstudo.Entidade.Entidade
         public string Descricao { get; set; }
 
         public Loja Loja { get; set; }
+
+        public int Id_Loja { get; set; }
     }
 }

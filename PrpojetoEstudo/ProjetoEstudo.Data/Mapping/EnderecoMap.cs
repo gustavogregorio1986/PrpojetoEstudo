@@ -14,6 +14,8 @@ namespace ProjetoEstudo.Data.Mapping
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
             builder.ToTable("tbEndereco");
+
+            builder.HasKey(e => e.IdEndereco);
         }
     }
 }

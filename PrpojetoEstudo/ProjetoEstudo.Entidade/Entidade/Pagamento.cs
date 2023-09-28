@@ -15,5 +15,7 @@ namespace ProjetoEstudo.Entidade.Entidade
         public int Quantidade { get; set; }
 
         public Produto Produto { get; set; }
+
+        public int Id_Produto { get; set; }
     }
 }

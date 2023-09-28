@@ -12,7 +12,9 @@ namespace ProjetoEstudo.Entidade.Entidade
 
         public string Nomeloja { get; set; }
 
-        public virtual Pessoa Pessoa { get; set; }
+        public Pessoa Pessoa { get; set; }
+
+        public int Íd_Pessoa { get; set; }
 
         public virtual List<Produto> Produtos { get; set; }
     }
