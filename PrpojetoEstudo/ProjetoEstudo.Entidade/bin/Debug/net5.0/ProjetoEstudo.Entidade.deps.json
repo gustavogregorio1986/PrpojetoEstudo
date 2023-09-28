@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProjetoEstudo.Entidade/1.0.0": {
+        "runtime": {
+          "ProjetoEstudo.Entidade.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoEstudo.Entidade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
