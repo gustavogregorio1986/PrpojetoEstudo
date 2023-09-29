@@ -18,6 +18,10 @@ namespace ProjetoEstudo.Data.Mapping
             builder.HasKey(pa => pa.IdPagamento);
 
             builder.Property(pa => pa.IdPagamento).IsRequired();
+
+            builder.Property(pa => pa.Preco).HasColumnName("Preco").IsRequired();
+
+            builder.Property(pa => pa.Quantidade).HasColumnName("Quantidade").IsRequired();
         }
     }
 }

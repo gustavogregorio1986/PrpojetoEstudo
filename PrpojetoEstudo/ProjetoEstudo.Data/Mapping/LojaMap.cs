@@ -18,6 +18,8 @@ namespace ProjetoEstudo.Data.Mapping
             builder.HasKey(l => l.IdLoja);
 
             builder.Property(l => l.IdLoja).IsRequired();
+
+            builder.Property(l => l.Nomeloja).HasColumnName("NomeLoja").IsRequired();
         }
     }
 }

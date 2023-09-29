@@ -16,6 +16,12 @@ namespace ProjetoEstudo.Entidade.Entidade
 
         public string Bairro { get; set; }
 
+        public string Cidade { get; set; }
+
+        public string Estado { get; set; }
+
+        public string Cep { get; set; }
+
         public Pessoa Pessoa { get; set; }
 
         public int Id_Pessoa { get; set; }

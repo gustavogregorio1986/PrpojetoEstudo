@@ -18,6 +18,14 @@ namespace ProjetoEstudo.Data.Mapping
             builder.HasKey(p => p.IdPessoa);
 
             builder.Property(p => p.IdPessoa).IsRequired();
+
+            builder.Property(p => p.NomePessoa).HasColumnName("NomePessoa").IsRequired();
+
+            builder.Property(p => p.EmailPessoa).HasColumnName("EmailPessoa").IsRequired();
+
+            builder.Property(p => p.Sexo).HasColumnName("Sexo").IsRequired();
+
+            builder.Property(p => p.Cpf).HasColumnName("Cpf").IsRequired();
         }
     }
 }

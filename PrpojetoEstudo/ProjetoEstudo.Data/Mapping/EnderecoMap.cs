@@ -18,6 +18,20 @@ namespace ProjetoEstudo.Data.Mapping
             builder.HasKey(e => e.IdEndereco);
 
             builder.Property(e => e.IdEndereco).IsRequired();
+
+            builder.Property(e => e.Logradouro).HasColumnName("Logradouro").IsRequired();
+
+            builder.Property(e => e.Complemento).HasColumnName("Complemento").IsRequired();
+
+            builder.Property(e => e.Bairro).HasColumnName("Bairro").IsRequired();
+
+            builder.Property(e => e.Complemento).HasColumnName("Complemento").IsRequired();
+
+            builder.Property(e => e.Cidade).HasColumnName("Cidade").IsRequired();
+
+            builder.Property(e => e.Estado).HasColumnName("Estado").IsRequired();
+
+            builder.Property(e => e.Cep).HasColumnName("Cep").IsRequired();
         }
     }
 }
