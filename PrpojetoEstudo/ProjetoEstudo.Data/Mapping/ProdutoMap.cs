@@ -22,6 +22,10 @@ namespace ProjetoEstudo.Data.Mapping
             builder.Property(pr => pr.NomeProduto).HasColumnName("NomeProduto").IsRequired();
 
             builder.Property(pr => pr.Descricao).HasColumnName("Descricao").IsRequired();
+
+            builder.HasOne(pr => pr.Pagamento)
+                  .WithOne(pa => pa.Produto)
+                  .HasForeignKey<Pagamento>(l => l.Id_Produto);
         }
     }
 }

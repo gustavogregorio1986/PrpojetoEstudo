@@ -26,6 +26,14 @@ namespace ProjetoEstudo.Data.Mapping
             builder.Property(p => p.Sexo).HasColumnName("Sexo").IsRequired();
 
             builder.Property(p => p.Cpf).HasColumnName("Cpf").IsRequired();
+
+            builder.HasOne(p => p.Endereco)
+                  .WithOne(e => e.Pessoa)
+                  .HasForeignKey<Endereco>(e => e.Id_Pessoa);
+
+            builder.HasOne(p => p.Loja)
+                  .WithOne(l => l.Pessoa)
+                  .HasForeignKey<Loja>(l => l.id_Pessoa);
         }
     }
 }

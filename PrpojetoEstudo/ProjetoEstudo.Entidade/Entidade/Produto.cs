@@ -14,8 +14,10 @@ namespace ProjetoEstudo.Entidade.Entidade
 
         public string Descricao { get; set; }
 
-        public Loja Loja { get; set; }
+        public List<Loja> Lojas { get; set; }
 
         public int Id_Loja { get; set; }
+
+        public virtual Pagamento Pagamento { get; set; }
     }
 }

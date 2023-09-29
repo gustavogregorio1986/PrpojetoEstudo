@@ -14,7 +14,7 @@ namespace ProjetoEstudo.Entidade.Entidade
 
         public Pessoa Pessoa { get; set; }
 
-        public int Íd_Pessoa { get; set; }
+        public int id_Pessoa { get; set; }
 
         public virtual List<Produto> Produtos { get; set; }
     }
